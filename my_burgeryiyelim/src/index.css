@@ -8,9 +8,22 @@ body
     font-family: 'Open Sans', sans-serif;
 }
 
+:root
+{
+    --footer-background:#333;
+    --light-gray: #cccccc;
+    --dark-gray: #888888;
+}
+
 *, *::before, *::after
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--light-gray);
 }

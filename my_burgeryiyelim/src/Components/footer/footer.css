@@ -1,10 +1,48 @@
 #footer
 {
     display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
     width: 100%;
+    background-color: var(--footer-background);
 }
 
 #footer > *
 {
     display: flex;
+    padding: 2rem 0;
+}
+
+#footer img
+{
+    object-fit: cover;
+    margin: 0.5rem;
+    width: auto;
+}
+
+#foot-info
+{
+    margin: 0 3rem;
+}
+
+#foot-keban
+{
+    justify-content: center;
+}
+
+.fo-img > img
+{
+    max-height: 2rem;
+}
+
+.etbis > img
+{
+    max-height: 7rem;
+
+}
+
+#local-certif > img
+{
+    max-height: 2.5rem;
+
 }

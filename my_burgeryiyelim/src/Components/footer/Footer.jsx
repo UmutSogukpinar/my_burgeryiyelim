@@ -1,39 +1,58 @@
 import React, { useContext } from "react";
-import "./footer.css"
-import {LanguageContext} from "../../Contexts/LanguageContext.jsx"
-
+import "./footer.css";
+import { LanguageContext } from "../../Contexts/LanguageContext.jsx";
 
 const Footer = () => {
-  const {dialogues, currentLang} = useContext(LanguageContext);
+  const { dialogues, currentLang } = useContext(LanguageContext);
 
   return (
     <div id="footer">
       <div id="foot-info">
         <div id="rights">
           <h3>Burger Yiyelim</h3>
-          <p>
-            Burger Yiyelim markasının tek hak sahibi Keban Et’tir. Web sitemizde
-            bulunan fiyatlar şubelere, paket servis ve gel-al servise göre
-            farklılık gösterebilmektedir. Burger Yiyelim tüm promosyonlar ve
-            kampanyaları değiştirme ve sonlandırma hakkını saklı tutar.
-          </p>
+          <p>{dialogues[currentLang].rights}</p>
         </div>
         <div>
           <h3>{dialogues[currentLang].linksC}</h3>
         </div>
         <div>
-          <h3>{dialogues[currentLang].menu}</h3>
+          <h3>{dialogues[currentLang].menuC}</h3>
         </div>
-        <div>{dialogues[currentLang].contactUsC}</div>
+        <div>
+          <h3>{dialogues[currentLang].contactUsC}</h3>
+        </div>
       </div>
-      <div id="foot-logos">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div id="foot-keban">
+        <div id="logos">
+          <a href="https://www.kebanet.com/" className="fo-img">
+            <img src="/images/footer-img/kebanet.png" alt="Keban Et" />
+          </a>
+          <a href="" className="fo-img">
+            <img src="/images/footer-img/etyiyelim.png" alt="Et Yiyelim" />
+          </a>
+          <a href="" className="fo-img">
+            <img src="/images/footer-img/kebankasap.png" alt="Keban Kasap" />
+          </a>
+          <a href="" className="fo-img">
+            <img src="/images/footer-img/etustasi.png" alt="Et Ustası" />
+          </a>
+          <a href="" className="fo-img">
+            <img src="/images/footer-img/pideyiyelim.png" alt="Pide Yiyelim" />
+          </a>
+        </div>
+        <p>Burger Yiyelim bir Keban Et kuruluşudur.</p>
+        <a href="" class="etbis">
+          <img src="/images/footer-img/etbis.jpeg" alt="" />
+        </a>
       </div>
       <div id="foot-certif">
-        <div></div>
-        <div></div>
+        <p>
+          Powered by <a href="">RestApp</a>
+        </p>
+        <div id="local-certif">
+          <img src="/images/footer-img/yerliuretim.png" alt="" className="local-img" />
+          <img src="/images/footer-img/helalsertifika.png" alt="" className="local-img" />
+        </div>
       </div>
     </div>
   );
