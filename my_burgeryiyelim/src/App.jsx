@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import AboutUs from "./aboutUs/AboutUs";
-import Home from "./Home/Home";
+import AboutUs from "./Components/aboutUs/AboutUs";
+import Home from "./Components/Home/Home";
 
-function App() {
+const App = () => {
   return (
     <div id="app">
       <Routes>
