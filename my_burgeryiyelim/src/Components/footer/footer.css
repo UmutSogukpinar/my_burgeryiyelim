@@ -2,7 +2,7 @@
 {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     background-color: var(--footer-background);
 }
@@ -10,7 +10,7 @@
 #footer > *
 {
     display: flex;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
 }
 
 #footer img
@@ -20,29 +20,52 @@
     width: auto;
 }
 
-#foot-info
+h3
 {
-    margin: 0 3rem;
+    border-bottom: 1px solid var(--mid-gray);
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--white);
+    font-size: 2rem;
 }
 
-#foot-keban
+p
+{
+    padding: .5rem;
+    margin: .5rem;
+    color: var(--mid-gray);
+    font-size: 1.5rem;
+}
+
+
+.fo-sub-info
+{
+    flex: 1;
+    margin: 2rem;  
+}
+.foot-info
+{
+    margin: 0 12vw;
+}
+
+.foot-keban
 {
     justify-content: center;
 }
 
 .fo-img > img
 {
-    max-height: 2rem;
+    height: 3rem;
+    vertical-align: middle;
 }
 
 .etbis > img
 {
-    max-height: 7rem;
-
+    height: 7rem;
 }
 
 #local-certif > img
 {
-    max-height: 2.5rem;
+    height: 2.5rem;
 
 }

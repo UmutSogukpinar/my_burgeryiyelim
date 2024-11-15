@@ -10,9 +10,10 @@ body
 
 :root
 {
+    --white: #ffffff;
     --footer-background:#333;
     --light-gray: #cccccc;
-    --dark-gray: #888888;
+    --mid-gray: #888888;
 }
 
 *, *::before, *::after
@@ -20,6 +21,7 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 2.5rem;
 }
 
 a
