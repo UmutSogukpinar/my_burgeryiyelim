@@ -1,10 +1,18 @@
 import React, { useContext } from "react";
 import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { LanguageContext } from "../../Contexts/LanguageContext.jsx";
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  const { dialogues, currentLang, spaceChar, adress, byEmail} = useContext(LanguageContext);
+  const { dialogues, currentLang, spaceChar, adress, byEmail } =
+    useContext(LanguageContext);
 
   return (
     <div id="footer">
@@ -15,22 +23,62 @@ const Footer = () => {
         </div>
         <div className="fo-sub-info fl-parent">
           <h3>{dialogues[currentLang].footer.linksC}</h3>
-          <NavLink className="footer-links" to="/aboutUs">{dialogues[currentLang].footer.aboutUs}</NavLink>
-          <NavLink className="footer-links" to="">{dialogues[currentLang].footer.clarification}</NavLink>
-          <NavLink className="footer-links" to="">{dialogues[currentLang].footer.franchiseApp}</NavLink>
-          <NavLink className="footer-links" to="">{dialogues[currentLang].footer.contact}</NavLink>
-          <NavLink className="footer-links" to="">{dialogues[currentLang].footer.hr}</NavLink>
-          <NavLink className="footer-links" to="">{dialogues[currentLang].footer.mLove}</NavLink>
+          <NavLink className="footer-links" to="/aboutUs">
+            {dialogues[currentLang].footer.aboutUs}
+          </NavLink>
+          <NavLink className="footer-links" to="">
+            {dialogues[currentLang].footer.clarification}
+          </NavLink>
+          <NavLink className="footer-links" to="">
+            {dialogues[currentLang].footer.franchiseApp}
+          </NavLink>
+          <NavLink className="footer-links" to="">
+            {dialogues[currentLang].footer.contact}
+          </NavLink>
+          <NavLink className="footer-links" to="">
+            {dialogues[currentLang].footer.hr}
+          </NavLink>
+          <NavLink className="footer-links" to="">
+            {dialogues[currentLang].footer.mLove}
+          </NavLink>
         </div>
         <div className="fo-sub-info">
           <h3>{dialogues[currentLang].footer.menuC}</h3>
-          <NavLink className="footer-links" to="/aboutUs">{dialogues[currentLang].footer.menu}</NavLink>
+          <NavLink className="footer-links" to="/menu">
+            {dialogues[currentLang].footer.menu}
+          </NavLink>
         </div>
         <div className="fo-sub-info" style={{ flex: 1.5 }}>
           <h3>{dialogues[currentLang].footer.contactUsC}</h3>
-          <ul id="fo-sub-contact">
-            <li id="adress">{adress}</li>
-            <li id="support">{byEmail}</li>
+          <ul id="fo-sub-contact" style={{ padding: "0 0 1rem 0" }}>
+            <li id="adress">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                className="sub-contact-icon"
+              />
+              {adress}
+            </li>
+            <li id="support">
+              <FontAwesomeIcon icon={faEnvelope} className="sub-contact-icon" />
+              {byEmail}
+            </li>
+          </ul>
+          <ul id="fo-sub-social">
+            <li>
+              <a href="https://www.facebook.com/burgeryiyelim" target="_blank">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/burgeryiyelimm/" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@burgeryiyelim/" target="_blank">
+                <FontAwesomeIcon icon={faYoutube} size="2x" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -106,13 +154,13 @@ const Footer = () => {
             src="/images/footer-img/yerliuretim.png"
             alt=""
             className="local-img"
-            style={{height: "3.5rem"}}
+            style={{ height: "3.5rem" }}
           />
           <img
             src="/images/footer-img/helalsertifika.png"
             alt=""
             className="local-img"
-            style={{height:"4rem"}}
+            style={{ height: "4rem" }}
           />
         </div>
       </div>

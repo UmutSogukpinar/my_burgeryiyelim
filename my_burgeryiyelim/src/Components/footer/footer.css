@@ -32,7 +32,7 @@ p {
 }
 
 .foot-info {
-  margin: 0 12vw;
+  margin: 0 15vw;
 }
 
 .foot-keban {
@@ -89,9 +89,30 @@ p {
   margin: 0 1rem;
 }
 
-#fo-sub-contact li 
+#fo-sub-contact li {
+  color: var(--mid-gray);
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.sub-contact-icon
 {
-    color: var(--mid-gray);
-    font-size: 1.3rem;
-    padding-bottom: 1rem;
+  color: var(--light-gray);
+  margin-right: 0.8rem; 
+}
+
+#fo-sub-social
+{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 1rem;
+  padding-bottom: .5rem;
+}
+
+#fo-sub-social > li > a > *
+{
+  width: 3rem;
+  height: 3rem;
+  color: var(--mid-gray);
+  margin: 0 .5rem;
 }
