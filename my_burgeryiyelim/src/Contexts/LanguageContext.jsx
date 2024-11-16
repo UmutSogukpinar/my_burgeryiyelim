@@ -6,8 +6,13 @@ const LanguageProvider = ({ children }) => {
   const adress = `Yenibosna Merkez Mahallesi Ladin Sokak No:36 Town Ofis Kat:9
                   Bahçelievler / İstanbul`;
   const byEmail = `destek@kebanet.com`;
-  const [spaceChar, setSpaceChar] = useState(" ");
+  const spaceChar = " ";
+
   const [currentLang, setCurrentLang] = useState("tr");
+
+  const changeLang = (event) => {
+    setCurrentLang(event.target.value);
+  };
 
   const [dialogues, setDialogues] = useState({
     tr: {
@@ -67,7 +72,16 @@ const LanguageProvider = ({ children }) => {
 
   return (
     <div>
-      <LanguageContext.Provider value={{ dialogues, currentLang, spaceChar, adress, byEmail}}>
+      <LanguageContext.Provider
+        value={{
+          dialogues,
+          currentLang,
+          spaceChar,
+          adress,
+          byEmail,
+          changeLang,
+        }}
+      >
         {children}
       </LanguageContext.Provider>
     </div>

@@ -11,7 +11,7 @@ import { LanguageContext } from "../../Contexts/LanguageContext.jsx";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  const { dialogues, currentLang, spaceChar, adress, byEmail } =
+  const { dialogues, currentLang, spaceChar, adress, byEmail, changeLang } =
     useContext(LanguageContext);
 
   return (
@@ -20,6 +20,12 @@ const Footer = () => {
         <div id="rights" className="fo-sub-info" style={{ flex: 2 }}>
           <h3>Burger Yiyelim</h3>
           <p>{dialogues[currentLang].footer.rights}</p>
+          <div id="lang-select">
+            <select value={currentLang} onChange={changeLang}>
+              <option value="tr">Türkçe</option>
+              <option value="eng">English</option>
+            </select>
+          </div>
         </div>
         <div className="fo-sub-info fl-parent">
           <h3>{dialogues[currentLang].footer.linksC}</h3>
@@ -70,7 +76,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/burgeryiyelimm/" target="_blank">
+              <a
+                href="https://www.instagram.com/burgeryiyelimm/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
             </li>
