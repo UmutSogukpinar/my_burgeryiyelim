@@ -1,71 +1,97 @@
-#footer
-{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--footer-background);
+h3 {
+  border-bottom: 1px solid var(--mid-gray);
+  padding: 1rem 0;
+  margin: 1rem;
+  color: var(--white);
+  font-size: 2rem;
 }
 
-#footer > *
-{
-    display: flex;
-    padding: 2rem 2rem;
+p {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: var(--mid-gray);
+  font-size: 1.5rem;
 }
 
-#footer img
-{
-    object-fit: cover;
-    margin: 0.5rem;
-    width: auto;
+#footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: space-between;
+  width: 100%;
+  background-color: var(--footer-background);
 }
 
-h3
-{
-    border-bottom: 1px solid var(--mid-gray);
-    padding: 1rem;
-    margin: 1rem;
-    color: var(--white);
-    font-size: 2rem;
+#footer > * {
+  display: flex;
 }
 
-p
+#footer img {
+  object-fit: cover;
+  margin: 0.5rem;
+  width: auto;
+}
+
+.foot-info {
+  margin: 0 12vw;
+}
+
+.foot-keban {
+  flex-flow: column nowrap;
+  margin: 0 5vw;
+  align-items: center;
+  border-bottom: 0.5px solid var(--mid-gray);
+}
+
+.foot-certif {
+  margin: 0 2rem;
+  padding: 1rem 0 6rem 0;
+  justify-content: center;
+  position: relative;
+}
+
+#local-certif {
+  position: absolute;
+  right: 0;
+  transform: translateY(50%);
+}
+
+.foot-keban > * {
+  padding: 0.5rem 0;
+}
+
+.fo-sub-info {
+  flex: 1;
+  margin: 1rem 2rem;
+}
+
+.fo-img > img {
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.etbis > img {
+  height: 12rem;
+}
+
+#local-certif > img {
+  height: 2.5rem;
+  margin: 0 1rem;
+}
+
+.fl-parent {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer-links {
+  font-size: 1.3rem;
+  line-height: 3rem;
+  margin: 0 1rem;
+}
+
+#fo-sub-contact li 
 {
-    padding: .5rem;
-    margin: .5rem;
     color: var(--mid-gray);
-    font-size: 1.5rem;
-}
-
-
-.fo-sub-info
-{
-    flex: 1;
-    margin: 2rem;  
-}
-.foot-info
-{
-    margin: 0 12vw;
-}
-
-.foot-keban
-{
-    justify-content: center;
-}
-
-.fo-img > img
-{
-    height: 3rem;
-    vertical-align: middle;
-}
-
-.etbis > img
-{
-    height: 7rem;
-}
-
-#local-certif > img
-{
-    height: 2.5rem;
-
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
 }

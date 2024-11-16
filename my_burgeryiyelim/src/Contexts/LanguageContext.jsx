@@ -3,6 +3,9 @@ import React, { createContext, useState } from "react";
 export const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
+  const adress = `Yenibosna Merkez Mahallesi Ladin Sokak No:36 Town Ofis Kat:9
+                  Bahçelievler / İstanbul`;
+  const byEmail = `destek@kebanet.com`;
   const [spaceChar, setSpaceChar] = useState(" ");
   const [currentLang, setCurrentLang] = useState("tr");
 
@@ -28,6 +31,10 @@ const LanguageProvider = ({ children }) => {
           link: "Keban Et",
           afterLink: "kuruluşudur.",
         },
+        clarification: "Aydınlatma Metni",
+        franchiseApp: "Bayilik Başvurusu",
+        hr: "İnsan Kaynakları",
+        mLove: "Et Aşkı",
       },
     },
     eng: {
@@ -50,14 +57,17 @@ const LanguageProvider = ({ children }) => {
           link: "Keban Et",
           afterLink: ".",
         },
+        clarification: "Clarification Text",
+        franchiseApp: "Franchise Application",
+        hr: "Human Resources",
+        mLove: "Meat Love",
       },
     },
   });
-  // Burger Yiyelim bir Keban Et kuruluşudur
-  // Burger Yiyelim is a subsidiary of Keban Et.
+
   return (
     <div>
-      <LanguageContext.Provider value={{ dialogues, currentLang, spaceChar}}>
+      <LanguageContext.Provider value={{ dialogues, currentLang, spaceChar, adress, byEmail}}>
         {children}
       </LanguageContext.Provider>
     </div>
