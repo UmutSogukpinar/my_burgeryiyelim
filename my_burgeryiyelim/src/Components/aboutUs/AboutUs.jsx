@@ -5,15 +5,24 @@ import { LanguageContext } from '../../Contexts/LanguageContext'
 
 const AboutUs = () => {
 
-  const {brandName} = useContext(LanguageContext);
+  const {brandName, currentLang, dialogues} = useContext(LanguageContext);
 
   return (
     <div id='about-us'>
       <main id='about-us-bg'>
-        
-        <section id='about-us-paraph'>
+        <div id='about-us-paraph'>
+          <img src="/images/aboutUs-img/aboutUs-upper-img.png" alt="" />
           <h1>{brandName}</h1>
-        </section>
+          <p>{dialogues[currentLang].aboutUs.parap1}</p>
+          <p>{dialogues[currentLang].aboutUs.parap2}</p>
+          <p>{dialogues[currentLang].aboutUs.parap3}</p>
+          <p>{dialogues[currentLang].aboutUs.parap4}</p>
+          <p>{dialogues[currentLang].aboutUs.parap5}</p>
+          <h3>{dialogues[currentLang].aboutUs.title1}</h3>
+          <p>{dialogues[currentLang].aboutUs.parap6}</p>
+          <h3>{dialogues[currentLang].aboutUs.title2}</h3>
+          <p>{dialogues[currentLang].aboutUs.parap7}</p>
+        </div>
       </main>
       <Footer/>
     </div>

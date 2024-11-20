@@ -1,15 +1,13 @@
-#about-us
-{
-    width: 100%;
+#about-us {
+  width: 100%;
 }
 
-#about-us h1
-{
-    font-size: 3rem;
-    margin: 3rem 0;
+#about-us h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
 }
 
-#about-us main {
+#about-us #about-us-bg {
   width: 100%;
   background-image: url("/images/by_bg01.png");
   background-size: cover;
@@ -18,8 +16,59 @@
   display: flex;
   justify-content: center;
 }
+#about-us-paraph {
+  background-color: var(--white);
+  flex-grow: 1;
+  margin: 10rem 15rem;
+  padding-bottom: 3rem;
+  min-width: 110rem;
+}
 
-#about-us section
+#about-us-bg #about-us-paraph p {
+  font-size: 1.4rem;
+}
+
+#about-us-bg #about-us-paraph p,
+#about-us-bg #about-us-paraph h1 {
+  padding: 1rem 2.5rem;
+}
+
+#about-us-bg #about-us-paraph h3 {
+   padding: .5rem 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#about-us-paraph img
 {
-    background-color: var(--white);
+    width: 100%;
+    height: 40vh;
+    padding: 2rem 2.5rem;
+
+}
+
+@media (max-width: 1200px)
+{
+    #about-us-paraph 
+    {
+        min-width: 97rem;
+    }
+}
+
+@media (max-width: 970px)
+{
+    #about-us-paraph 
+    {
+        min-width: 75rem;
+    }
+}
+
+@media (max-width: 750px)
+{
+    #about-us-paraph 
+    {
+        margin: 10rem  5%;
+        min-width: 35rem;
+    }
+
 }
