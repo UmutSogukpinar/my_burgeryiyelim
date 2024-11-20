@@ -21,10 +21,6 @@ p {
   background-color: var(--footer-background);
 }
 
-#footer > * {
-  display: flex;
-}
-
 #footer img {
   object-fit: cover;
   margin: 0.5rem;
@@ -32,10 +28,12 @@ p {
 }
 
 .foot-info {
-  margin: 0 15vw;
+  display: flex;
+  margin: 2.5rem 10vw;
 }
 
 .foot-keban {
+  display: flex;
   flex-flow: column nowrap;
   margin: 0 5vw;
   align-items: center;
@@ -43,6 +41,7 @@ p {
 }
 
 .foot-certif {
+  display: flex;
   margin: 0 2rem;
   padding: 1rem 0 6rem 0;
   justify-content: center;
@@ -62,6 +61,7 @@ p {
 .fo-sub-info {
   flex: 1;
   margin: 1rem 2rem;
+  padding: 0 2rem;
 }
 
 .fo-img > img {
@@ -93,29 +93,83 @@ p {
   color: var(--mid-gray);
   font-size: 1.5rem;
   margin: 0 1rem 1rem 1rem;
-
 }
 
-.sub-contact-icon
-{
+.sub-contact-icon {
   color: var(--light-gray);
-  margin-right: 0.8rem; 
+  margin-right: 0.8rem;
 }
 
-#fo-sub-social
-{
+#fo-sub-social {
   display: flex;
   flex-flow: row nowrap;
   margin: 0 1rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
-#fo-sub-social > li > a > *
-{
+#fo-sub-social > li > a > * {
   width: 3rem;
   height: 3rem;
   color: var(--mid-gray);
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
+}
+
+#rights p {
+  width: 30rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+@media (max-width: 1216px) {
+  .fo-sub-info {
+    margin: 1rem 0.1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .foot-info {
+    flex-direction: column;
+  }
+
+  #rights p {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .foot-certif
+  {
+    flex-direction: column;
+    align-items: center;
+    position:static;
+  }
+
+  #local-certif
+  {
+    position: static;
+  }
+
+  #lang-select
+  {
+    margin-top: 1rem;
+  }
+}
+
+#lang-select
+{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#lang-box
+{
+  background-color: var(--mid-gray);
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: .3rem 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 select {
@@ -126,17 +180,8 @@ select {
   width: 10rem;
   background-color: var(--light-gray);
   color: #555;
-  border-radius: .5rem;
-  padding: .3rem .6rem;
-  margin: 0 .5rem;
-}
-
-select::after {
-  content: ' ▼';
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 14px;
-  pointer-events: none;
+  border-radius:0 0.5rem 0.5rem 0;
+  padding: .3rem .8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }

@@ -17,10 +17,13 @@ const Footer = () => {
   return (
     <div id="footer">
       <div class="foot-info foot-element">
-        <div id="rights" className="fo-sub-info" style={{ flex: 2 }}>
+        <div className="fo-sub-info"  id="rights">
           <h3>Burger Yiyelim</h3>
           <p>{dialogues[currentLang].footer.rights}</p>
           <div id="lang-select">
+            <div id="lang-box">
+              {dialogues[currentLang].symbol}
+            </div>
             <select value={currentLang} onChange={changeLang}>
               <option value="tr">Türkçe</option>
               <option value="eng">English</option>
@@ -54,7 +57,7 @@ const Footer = () => {
             {dialogues[currentLang].footer.menu}
           </NavLink>
         </div>
-        <div className="fo-sub-info" style={{ flex: 1.5 }}>
+        <div className="fo-sub-info">
           <h3>{dialogues[currentLang].footer.contactUsC}</h3>
           <ul id="fo-sub-contact" style={{ padding: "0 0 1rem 0" }}>
             <li id="adress">

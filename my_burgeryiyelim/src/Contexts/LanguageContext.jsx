@@ -16,6 +16,7 @@ const LanguageProvider = ({ children }) => {
 
   const [dialogues, setDialogues] = useState({
     tr: {
+      symbol: "TR",
       footer: {
         aboutUsC: "HAKKIMIZDA",
         aboutUs: "Hakkımızda",
@@ -43,6 +44,7 @@ const LanguageProvider = ({ children }) => {
       },
     },
     eng: {
+      symbol: "ENG",
       footer: {
         aboutUsC: "ABOUT US",
         aboutUs: "About us",
