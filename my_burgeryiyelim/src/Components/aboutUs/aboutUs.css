@@ -1,0 +1,25 @@
+#about-us
+{
+    width: 100%;
+}
+
+#about-us h1
+{
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+#about-us main {
+  width: 100%;
+  background-image: url("/images/by_bg01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+#about-us section
+{
+    background-color: var(--white);
+}
