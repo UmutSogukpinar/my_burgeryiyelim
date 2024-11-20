@@ -1,7 +1,7 @@
 h3 {
   border-bottom: 1px solid var(--mid-gray);
   padding: 1rem 0;
-  margin: 1rem;
+  margin: 1rem 0;
   color: var(--white);
   font-size: 2rem;
 }
@@ -120,14 +120,22 @@ p {
   overflow: hidden;
 }
 
-@media (max-width: 1216px) {
+@media (max-width: 1400px) {
   .fo-sub-info {
     margin: 1rem 0.1rem;
-    padding: 0 0.5rem;
+    padding: 0 2rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px)
+{
+  .foot-info
+  {
+    margin: 2.5rem 2vw;
+  }
+}
+
+@media (max-width: 1000px) {
   .foot-info {
     flex-direction: column;
   }
