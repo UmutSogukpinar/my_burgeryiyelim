@@ -8,7 +8,7 @@ const AboutUs = () => {
   const {brandName, currentLang, dialogues} = useContext(LanguageContext);
 
   return (
-    <div id='about-us'>
+    <>
       <main id='about-us-bg'>
         <div id='about-us-paraph'>
           <img src="/images/aboutUs-img/aboutUs-upper-img.png" alt="" />
@@ -25,7 +25,7 @@ const AboutUs = () => {
         </div>
       </main>
       <Footer/>
-    </div>
+    </>
   )
 }
 

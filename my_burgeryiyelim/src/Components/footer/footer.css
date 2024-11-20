@@ -6,13 +6,6 @@
   font-size: 2rem;
 }
 
-#footer p {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  color: var(--mid-gray);
-  font-size: 1.5rem;
-}
-
 #footer {
   display: flex;
   flex-flow: column nowrap;
@@ -86,7 +79,6 @@
 .footer-links {
   font-size: 1.3rem;
   line-height: 3rem;
-  margin: 0 1rem;
 }
 
 #fo-sub-contact li {
@@ -118,6 +110,10 @@
   width: 30rem;
   height: 20rem;
   overflow: hidden;
+  padding-left: 0;
+  margin-left: 0;
+  color: var(--mid-gray);
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1400px) {
@@ -140,11 +136,6 @@
     flex-direction: column;
   }
 
-  #rights p {
-    width: auto;
-    height: auto;
-    overflow: hidden;
-  }
 
   .foot-certif
   {
