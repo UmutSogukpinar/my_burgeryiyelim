@@ -162,6 +162,13 @@
   {
     margin-top: 1rem;
   }
+
+  #logos
+  {
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+  }
 }
 
 #lang-select
