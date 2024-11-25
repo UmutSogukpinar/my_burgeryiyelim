@@ -21,9 +21,9 @@ const Navbar = () => {
         </div>
         <ul id="navbar-list">
           <li><Link to="/branches">{dialogues[currentLang].navbar.locationsC}</Link></li>
-          <li><Link to="/branches">{dialogues[currentLang].navbar.aboutUsC}</Link></li>
-          <li><Link to="/branches">{dialogues[currentLang].navbar.productsC}</Link></li>
-          <li><Link to="/branches">{dialogues[currentLang].navbar.contactC}</Link></li>
+          <li><Link to="/aboutUs">{dialogues[currentLang].navbar.aboutUsC}</Link></li>
+          <li><Link to="/products">{dialogues[currentLang].navbar.productsC}</Link></li>
+          <li><Link to="/contact">{dialogues[currentLang].navbar.contactC}</Link></li>
         </ul>
       </div>
     </div>
