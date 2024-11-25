@@ -18,6 +18,12 @@ const LanguageProvider = ({ children }) => {
   const [dialogues, setDialogues] = useState({
     tr: {
       symbol: "TR",
+      navbar: {
+        locationsC: "ŞUBELERİMİZ",
+        aboutUsC: "HAKKIMIZDA",
+        productsC: "ÜRÜNLER",
+        contactC: "İLETİŞİM",
+      },
       aboutUs: {
         parap1: `Keban Et 1976 yılında Keban Kasap olarak kuruldu. Butik bir kasap olmasına rağmen müşterilerine sunmuş olduğu ürünlerin katkısız ve lezzetli olmasından dolayı kısa sürede 'Et Ustası' ünvanının aldı. 41 yıldır iş hacmi, ürün yelpazesi, müşteriler, çalışanlar kısacası bir çok şey değişti. Ancak değişmeyen tek şey Keban Et'in sunduğu et ve et ürünlerinin lezzeti idi.`,
         parap2: `Keban Kasap müşterilerinden aldığı talepler ile kalitesini hiç bozmadan büyüyebilen nadir et üreticilerindendir. İlerleyen yıllarda gücünü müşterilerinin sadakat ve övgülerinden alarak üretim bandını genişletti.`,
@@ -31,7 +37,6 @@ const LanguageProvider = ({ children }) => {
         title2: `KÖFTELERİNİZ HELAL Mİ??`,
       },
       footer: {
-        aboutUsC: "HAKKIMIZDA",
         aboutUs: "Hakkımızda",
         contactC: "İLETİŞİM",
         contact: "İletişim",
@@ -40,7 +45,6 @@ const LanguageProvider = ({ children }) => {
         menu: "Ürünler",
         orderC: "ONLINE SİPARİŞ",
         linksC: "KURUMSAL",
-        locationsC: "ŞUBELERİMİZ",
         rights: `Burger Yiyelim markasının tek hak sahibi Keban Et’tir. Web sitemizde
             bulunan fiyatlar şubelere, paket servis ve gel-al servise göre
             farklılık gösterebilmektedir. Burger Yiyelim tüm promosyonlar ve
@@ -58,6 +62,12 @@ const LanguageProvider = ({ children }) => {
     },
     eng: {
       symbol: "ENG",
+      navbar: {
+        locationsC: "LOCATIONS",
+        aboutUsC: "ABOUT US",
+        productsC: "PRODUCTS",
+        contactC: "CONTACT",
+      },
       aboutUs: {
         parap1: `Keban Meat was established as Keban Kasap in 1976. Although it is a boutique butcher shop, it quickly earned the title of "Meat Master" due to the additive-free and delicious products it offered to its customers. Over the past 41 years, many things have changed, such as business volume, product range, customers, and employees. However, the one thing that has never changed is the taste of the meat and meat products that Keban Et provides.`,
         parap2: `Keban Kasap is one of the rare meat producers that has been able to grow without compromising its quality, thanks to the demands from its customers. In the following years, it expanded its production line by drawing strength from the loyalty and praise of its customers.`,
@@ -70,16 +80,13 @@ const LanguageProvider = ({ children }) => {
         title2: `ARE YOUR PATTIES HALAL?`,
       },
       footer: {
-        aboutUsC: "ABOUT US",
         aboutUs: "About us",
-        contactC: "CONTACT",
         contact: "Contact",
         contactUsC: "CONTACT US",
         menuC: "MENU",
         menu: "Menu",
         orderC: "ORDER NOW",
         linksC: "LINKS",
-        locationsC: "LOCATION",
         rights: `The sole proprietor of the Burger Yiyelim brand is Keban Et. 
                 The prices available on our website may vary depending on the branch, delivery service, and take-out options. 
                 Burger Yiyelim reserves the right to modify or terminate all promotions and campaigns at any time.`,
