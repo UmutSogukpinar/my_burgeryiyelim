@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../Contexts/LanguageContext.jsx";
 
 const Navbar = () => {
+  const { dialogues, currentLang} =
+    useContext(LanguageContext);
+
   return (
     <div id="main-navbar">
       <div className="navbar-content">
@@ -15,11 +19,11 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul>
-          <li><Link></Link></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul id="navbar-list">
+          <li><Link to="/branches">{dialogues[currentLang].navbar.locationsC}</Link></li>
+          <li><Link to="/branches">{dialogues[currentLang].navbar.aboutUsC}</Link></li>
+          <li><Link to="/branches">{dialogues[currentLang].navbar.productsC}</Link></li>
+          <li><Link to="/branches">{dialogues[currentLang].navbar.contactC}</Link></li>
         </ul>
       </div>
     </div>
