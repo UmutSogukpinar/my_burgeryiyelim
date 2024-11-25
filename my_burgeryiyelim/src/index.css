@@ -14,6 +14,7 @@ body
     --footer-background:#333;
     --light-gray: #cccccc;
     --mid-gray: #888888;
+    --navbar-bg: #940C18;
 }
 
 *, *::before, *::after

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import Footer from '../footer/Footer'
+import Navbar from '../navbar/Navbar'
 import "./aboutUs.css"
 import { LanguageContext } from '../../Contexts/LanguageContext'
 
@@ -9,6 +10,7 @@ const AboutUs = () => {
 
   return (
     <>
+    <Navbar/>
       <main id='about-us-bg'>
         <div id='about-us-paraph'>
           <img src="/images/aboutUs-img/aboutUs-upper-img.png" alt="" />

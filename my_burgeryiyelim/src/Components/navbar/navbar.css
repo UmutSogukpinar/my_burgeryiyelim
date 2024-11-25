@@ -1,3 +1,26 @@
 #main-navbar{
-    background-color: #940C18;
+    background-color: var(--navbar-bg);
+    height: 11rem;
+}
+
+.navbar-content
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo-box
+{
+    background-color: var(--white);
+    line-height: 0;
+    padding: 2rem 0.3rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+
+.logo-box img
+{
+    height: 10rem;
 }
