@@ -29,6 +29,7 @@
 {
     display: flex;
     height: 10rem;
+
 }
 
 #navbar-list > li
@@ -36,11 +37,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 0 3rem;
     border-right: 1px solid rgb(119 10 0) ;
     font-size: 1.8rem;
     font-weight: 700;
-
+    height: 100%;
+    transition: background-color 0.5s ease
 }
 
 #navbar-list > li > a
@@ -48,7 +50,17 @@
     color: var(--white) !important;
 }
 
-#navbar-list li:nth-child(4)
+#navbar-list > li  i
+{
+    margin-right: 2rem;
+}
+
+#navbar-list li:last-child
 {
     border-right: 0;
+}
+
+#navbar-list li:hover
+{
+    background-color: var(--navbar-focus) ;
 }

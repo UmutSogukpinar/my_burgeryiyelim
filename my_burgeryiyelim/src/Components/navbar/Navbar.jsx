@@ -1,29 +1,48 @@
 import React, { useContext } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { LanguageContext } from "../../Contexts/LanguageContext.jsx";
 
 const Navbar = () => {
-  const { dialogues, currentLang} =
-    useContext(LanguageContext);
+  const { dialogues, currentLang } = useContext(LanguageContext);
 
   return (
     <div id="main-navbar">
       <div className="navbar-content">
         <div className="logo-box">
-          <Link to="/">
+          <NavLink to="/">
             <img
               src="/images/burgeryiyelim-logo.png"
               alt=""
               className="logo-amblem"
             />
-          </Link>
+          </NavLink>
         </div>
         <ul id="navbar-list">
-          <li><Link to="/branches">{dialogues[currentLang].navbar.locationsC}</Link></li>
-          <li><Link to="/aboutUs">{dialogues[currentLang].navbar.aboutUsC}</Link></li>
-          <li><Link to="/products">{dialogues[currentLang].navbar.productsC}</Link></li>
-          <li><Link to="/contact">{dialogues[currentLang].navbar.contactC}</Link></li>
+          <li>
+            <NavLink to="/branches">
+              <i class="fa-solid fa-signs-post"></i>
+              {dialogues[currentLang].navbar.locationsC}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/aboutUs">
+              <i class="fa-solid fa-info" style={{ fontSize: "2rem" }}></i>
+              {dialogues[currentLang].navbar.aboutUsC}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/products">
+              <i class="fa-solid fa-utensils"></i>
+              {dialogues[currentLang].navbar.productsC}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">
+              <i class="fa-solid fa-location-dot"></i>
+              {dialogues[currentLang].navbar.contactC}
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>

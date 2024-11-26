@@ -15,6 +15,7 @@ body
     --light-gray: #cccccc;
     --mid-gray: #888888;
     --navbar-bg: #940C18;
+    --navbar-focus: #880b00 ;
 }
 
 *, *::before, *::after

@@ -41,6 +41,12 @@
   border-bottom: 0.5px solid var(--mid-gray);
 }
 
+.foot-keban > p
+{
+  font-size: 1.4rem;
+  padding: 1.5rem 0;
+}
+
 .foot-certif {
   display: flex;
   margin: 0 2rem;
@@ -129,7 +135,6 @@
   color: var(--mid-gray);
   font-size: 1.5rem;
 }
-
 
 #lang-select
 {
