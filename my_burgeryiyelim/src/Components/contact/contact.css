@@ -1,23 +1,82 @@
+.forms
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
+    width: 90%;
+}
+
 #contact
 {
     background-image: url("/images/by_bg01.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
 
-#form-box
-{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10rem;
-    padding: 5rem 0;
+    justify-content: center;
+
 }
 
-#form-box h2
+#contact-form-box
+{
+    background-color: var(--white);
+    margin: 5rem;
+    width: 60%;
+}
+
+#contact-form-box h2
 {
     color: #db1e38;
     font-size: 2.5rem;
+    margin: 3rem;
+}
+
+#forms-label
+{
+    width: 100%;
+}
+
+#forms-label > :nth-child(2)
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.each_input_child
+{
+    width: 49%;
+    margin-right: 2%;
+}
+
+.each_input_child_phone
+{
+    margin-right: 0;
+}
+
+.each_input
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.each_input label
+{
+    color: #db1e38;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.each_input input
+{
+    background-color: #f9f9f9;
+    width: 100%;
+    border-color: #f9f9f9;
+    border-radius: .5rem;
+    border: .1rem solid #f2f2f2;
+    height: 2.5rem;
+    padding: 2rem;
 }
 
