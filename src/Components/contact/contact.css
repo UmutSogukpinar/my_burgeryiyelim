@@ -8,12 +8,13 @@
 
 #contact {
   background-image: url("/images/by_bg01.png");
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   justify-content: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 #contact-form-box {
