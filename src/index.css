@@ -1,35 +1,49 @@
-html
-{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
-body
-{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-:root
-{
-    --white: #ffffff;
-    --footer-background:#333;
-    --light-gray: #cccccc;
-    --mid-gray: #888888;
-    --navbar-bg: #940C18;
-    --navbar-focus: #880b00 ;
+:root {
+  --white: #ffffff;
+  --footer-background: #333;
+  --light-gray: #cccccc;
+  --mid-gray: #888888;
+  --navbar-bg: #940c18;
+  --navbar-focus: #880b00;
 }
 
-*, *::before, *::after
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 2.5rem;
-    list-style-type: none;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  list-style-type: none;
 }
 
-a
-{
-    text-decoration: none;
-
+a {
+  text-decoration: none;
 }
 
+input {
+  border: 0.1rem solid;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+textarea:focus {
+  outline: none;
+  border: none; 
+}

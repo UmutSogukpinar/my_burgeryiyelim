@@ -48,6 +48,7 @@ const LanguageProvider = ({ children }) => {
         subject: "Mesajınızın Konusu",
         message_header: "Mesajınız",
         message: "Mesajınız",
+        submit: "Gönder",
       },
       footer: {
         aboutUs: "Hakkımızda",
@@ -104,6 +105,7 @@ const LanguageProvider = ({ children }) => {
         subject: "Please enter a subject",
         message_header: "Your Message",
         message: "Please enter your message",
+        submit: "Submit",
       },
       footer: {
         aboutUs: "About us",
