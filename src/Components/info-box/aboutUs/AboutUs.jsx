@@ -13,7 +13,7 @@ const AboutUs = ({ currentLang, dialogues }) => {
       <Navbar />
       <main id="about-us-bg" className="background sub-info-box">
         <div className="paraph-box">
-          <img src="/images/info-box-img/aboutUs-upper-img.png" alt="" />
+          <img src="/images/info-box-img/about-us.png" alt="" />
           <h1>{brandName}</h1>
           <p>{dialogues[currentLang].aboutUs.parap1}</p>
           <p>{dialogues[currentLang].aboutUs.parap2}</p>

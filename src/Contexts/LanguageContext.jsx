@@ -50,6 +50,19 @@ const LanguageProvider = ({ children }) => {
         message: "Mesajınız",
         submit: "Gönder",
       },
+      meatLove: {
+        meatLove: "Et Aşkı",
+        title1: "Et Aşkı, Aşkla Hazırlanır",
+        title2: "Lezzetin Burger Hali",
+        parap1:
+          "Kaliteli malzemeler kullanılarak hazırlanan bir burger, lezzeti ile de kendini belli eder. Burger demek Et Aşkı demektir. Et Aşkı demek burgerin en lezzetli halidir. Burger yerken içinde et var dedirten lezzet ile tanışmanın vakti geldi. Lezzetli ve doyurucu bir burger yiyelim denildiği zaman akıllara gelen ilk isim elbette et aşkı olacaktır.",
+        parap2:
+          "Dana eti ile hazırlanmakta olan yüzde yüz yerli üretim burger ile aranan lezzete ulaşabilirsiniz. Vazgeçilmez lezzet et aşkı ile acıkan kişilerin ilk tercihi burger yiyelim olacaktır. Kalitenin lezzetle buluştuğu yerde sipariş ettiğiniz burgerin içinde et var güven içerisinde tüketebilirsiniz.",
+        parap3:
+          "Et Aşkı tarafından hazırlanan burgerlerin içerisinde bulunan yüksek gramajlı et ile lezzetin en doyurucu halini hissedersiniz. Burgerlerin içerisinde yer alan sucuk, pastırma, füme ve peynirler ile tamamlanan leziz hamburgeri siz de keşfedin. Doyurucu porsiyonlar ve yüksek gramajlı et ile siz de içinde et var dedirten lezzet ile tanışmak için daha fazla vakit kaybetmeyin.",
+        parap4:
+          "Et Aşkı tarafından hazırlanan burger içerisinde bulunan malzemelerin kalitesi ile yüksek bir lezzet ortaya çıkarmaktadır. Kendisine özgü yüzde yüz yerli üretim ve dana eti kullanılarak hazırlanan burgerler ile siz de yerken içinde et var dedirten lezzet ile tanışmak isteyebilirsiniz. Zengin ürün çeşitliliği ile doyurucu bir burger yemek isteyen kişilerin tercih ettiği ilk adres Et Aşkı olacaktır.",
+      },
       footer: {
         aboutUs: "Hakkımızda",
         contactC: "İLETİŞİM",
@@ -106,6 +119,19 @@ const LanguageProvider = ({ children }) => {
         message_header: "Your Message",
         message: "Please enter your message",
         submit: "Submit",
+      },
+      meatLove: {
+        meatLove: "Meat Love",
+        title1: "Meat Love is Made with Passion",
+        title2: "The Taste of a Perfect Burger",
+        parap1:
+          "A burger made with high-quality ingredients stands out with its exceptional flavor. Burger means Meat Love. Meat Love represents the most delicious version of a burger. It’s time to experience a taste that truly says 'there’s real meat in this burger.' When it comes to enjoying a flavorful and satisfying burger, the first name that comes to mind is Meat Love.",
+        parap2:
+          "Prepared with 100% locally sourced beef, our burger offers the irresistible taste you’ve been searching for. For those who crave a satisfying meal, Meat Love is the ultimate choice. With burgers that combine quality and flavor, you can enjoy every bite with confidence.",
+        parap3:
+          "The burgers prepared by Meat Love feature high-grammage beef patties that deliver the most fulfilling taste. Experience the delicious burgers complemented with ingredients like sausage, pastrami, smoked meats, and cheeses. Don’t wait any longer to discover the taste that truly says 'there’s real meat in this burger.'",
+        parap4:
+          "The ingredients used in burgers crafted by Meat Love are of the highest quality, resulting in an unparalleled taste. Featuring its unique 100% locally produced beef, these burgers deliver a flavor that speaks for itself. With a rich variety of options, Meat Love is the first choice for those looking to enjoy a satisfying burger.",
       },
       footer: {
         aboutUs: "About us",

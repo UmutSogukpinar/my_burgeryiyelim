@@ -1,8 +1,8 @@
-import React from 'react'
-import "../info-box.css"
-import "./"
+import React from "react";
+import "../info-box.css";
 
-const MeatLove = ({currentLang, dialogues}) => {
+const MeatLove = ({ currentLang, dialogues }) => {
+  const { brandName } = useContext(LanguageContext);
   return (
     <>
       <Navbar />
@@ -24,6 +24,6 @@ const MeatLove = ({currentLang, dialogues}) => {
       <Footer />
     </>
   );
-}
+};
 
-export default MeatLove
+export default MeatLove;
