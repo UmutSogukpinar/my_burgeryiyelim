@@ -3,9 +3,11 @@ import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import "./contact.css";
 import { LanguageContext } from "../../Contexts/LanguageContext";
+import { FormContext } from "../../Contexts/FormContext";
 
 const Contact = () => {
   const { brandName, currentLang, dialogues } = useContext(LanguageContext);
+  const { handleChange, submitForm } = useContext(FormContext);
 
   return (
     <>
@@ -16,57 +18,67 @@ const Contact = () => {
           <div id="contact-form">
             <h2>{dialogues[currentLang].contact.writeUs}</h2>
             <div className="forms">
-              <form action="" id="forms-label">
+              <form action="" id="forms-label" onSubmit={submitForm}>
                 <div className="each_input">
-                  <label htmlFor="name">
+                  <label htmlFor="userName">
                     {dialogues[currentLang].contact.name_surname_header}
                   </label>
                   <input
                     type="text"
-                    name="name"
+                    name="userName"
                     placeholder={dialogues[currentLang].contact.name_surname}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="each_input">
                   <div className="each_input_child">
-                    <label htmlFor="name">
+                    <label htmlFor="email">
                       {dialogues[currentLang].contact.email_header}
                     </label>
                     <input
                       type="email"
-                      name="name"
+                      name="email"
                       placeholder={dialogues[currentLang].contact.email}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className="each_input_child each_input_child_phone">
-                    <label htmlFor="name">
+                    <label htmlFor="tel">
                       {dialogues[currentLang].contact.phone_header}
                     </label>
                     <input
                       type="tel"
-                      name="name"
+                      name="tel"
                       placeholder={dialogues[currentLang].contact.phone}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
                 <div className="each_input">
-                  <label htmlFor="name">
+                  <label htmlFor="subject">
                     {dialogues[currentLang].contact.subject_header}
                   </label>
                   <input
                     type="text"
-                    name="name"
+                    name="subject"
                     placeholder={dialogues[currentLang].contact.subject}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="each_input">
-                  <label htmlFor="name">
+                  <label htmlFor="message">
                     {dialogues[currentLang].contact.message_header}
                   </label>
                   <textarea
                     type="text"
-                    name="name"
+                    name="message"
                     placeholder={dialogues[currentLang].contact.message}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="contact-button">
