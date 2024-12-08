@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <>
     <Navbar/>
-      <main id='about-us-bg'>
+      <main id='about-us-bg' className='background'>
         <div id='about-us-paraph'>
           <img src="/images/aboutUs-img/aboutUs-upper-img.png" alt="" />
           <h1>{brandName}</h1>

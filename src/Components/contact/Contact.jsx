@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div id="contact">
+      <div id="contact" className="background">
         <div id="contact-form-box">
           <h2>{brandName}</h2>
           <div id="contact-form">

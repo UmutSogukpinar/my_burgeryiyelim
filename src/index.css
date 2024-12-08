@@ -45,5 +45,11 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border: none; 
+  border: none;
+}
+
+.background {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
