@@ -50,6 +50,6 @@ textarea:focus {
 
 .background {
   background-size: 100%;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }

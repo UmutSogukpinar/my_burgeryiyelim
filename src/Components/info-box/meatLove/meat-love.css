@@ -1,0 +1,15 @@
+#meat-love-bg #meat-love-bottom-img {
+  display: block;
+  width: 80rem;
+  height: 110vh;
+  margin: 3rem auto;
+}
+
+@media (max-width: 750px) {
+  #meat-love-bottom-img {
+    margin: 0;
+    padding: 1.5rem 2rem;
+    width: 100% !important;
+    height: 50vh !important;
+  }
+}

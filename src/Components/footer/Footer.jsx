@@ -41,13 +41,13 @@ const Footer = () => {
           <NavLink className="footer-links" to="">
             {dialogues[currentLang].footer.franchiseApp}
           </NavLink>
-          <NavLink className="footer-links" to="">
+          <NavLink className="footer-links" to="/contact">
             {dialogues[currentLang].footer.contact}
           </NavLink>
           <NavLink className="footer-links" to="">
             {dialogues[currentLang].footer.hr}
           </NavLink>
-          <NavLink className="footer-links" to="">
+          <NavLink className="footer-links" to="/meat-love">
             {dialogues[currentLang].footer.mLove}
           </NavLink>
         </div>
