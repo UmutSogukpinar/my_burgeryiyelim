@@ -7,7 +7,7 @@ import { FormContext } from "../../Contexts/FormContext";
 
 const Contact = () => {
   const { brandName, currentLang, dialogues } = useContext(LanguageContext);
-  const { handleChange, submitForm } = useContext(FormContext);
+  const { handleChange, submitForm, formData } = useContext(FormContext);
 
   return (
     <>
@@ -26,6 +26,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="userName"
+                    value={formData.userName}
                     placeholder={dialogues[currentLang].contact.name_surname}
                     onChange={handleChange}
                     required
@@ -39,6 +40,7 @@ const Contact = () => {
                     <input
                       type="email"
                       name="email"
+                      value={formData.email}
                       placeholder={dialogues[currentLang].contact.email}
                       onChange={handleChange}
                       required
@@ -51,6 +53,7 @@ const Contact = () => {
                     <input
                       type="tel"
                       name="tel"
+                      value={formData.tel}
                       placeholder={dialogues[currentLang].contact.phone}
                       onChange={handleChange}
                       required
@@ -64,6 +67,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="subject"
+                    value={formData.subject}
                     placeholder={dialogues[currentLang].contact.subject}
                     onChange={handleChange}
                     required
@@ -76,6 +80,7 @@ const Contact = () => {
                   <textarea
                     type="text"
                     name="message"
+                    value={formData.message}
                     placeholder={dialogues[currentLang].contact.message}
                     onChange={handleChange}
                     required

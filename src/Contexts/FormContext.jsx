@@ -53,7 +53,6 @@ const FormProvider = ({ children }) => {
         `http://localhost:2244/contactFormList`, // API endpoint
         cleanedTask
       );
-      console.log("Response: ", response.data);
     } catch (error) {
       console.error(
         "Error creating task:",
@@ -61,7 +60,7 @@ const FormProvider = ({ children }) => {
       );
     } finally {
       setIsSubmitted(false);
-      setFormData(resetedFormData); // Formu sıfırla
+      setFormData(resetedFormData);
     }
   };
 
@@ -69,11 +68,11 @@ const FormProvider = ({ children }) => {
   const cleanTaskData = () => {
     const { userName, email, tel, subject, message } = formData;
 
-    const cleanedUserName = userName.replace(/[\x00-\x1F\x7F]/g, "");
-    const cleanedEmail = email.replace(/[\x00-\x1F\x7F]/g, "");
-    const cleanedTel = tel.replace(/[\x00-\x1F\x7F]/g, "");
-    const cleanedSubject = subject.replace(/[\x00-\x1F\x7F]/g, "");
-    const cleanedMessage = message.replace(/[\x00-\x1F\x7F]/g, "");
+    const cleanedUserName = userName.replace(/[\x00-\x1F\x7F]/g, " ");
+    const cleanedEmail = email.replace(/[\x00-\x1F\x7F]/g, " ");
+    const cleanedTel = tel.replace(/[\x00-\x1F\x7F]/g, " ");
+    const cleanedSubject = subject.replace(/[\x00-\x1F\x7F]/g, " ");
+    const cleanedMessage = message.replace(/[\x00-\x1F\x7F]/g, " ");
 
     return {
       userName: cleanedUserName,
@@ -85,7 +84,7 @@ const FormProvider = ({ children }) => {
   };
 
   return (
-    <FormContext.Provider value={{ handleChange, submitForm }}>
+    <FormContext.Provider value={{ handleChange, submitForm, formData }}>
       {children}
     </FormContext.Provider>
   );
