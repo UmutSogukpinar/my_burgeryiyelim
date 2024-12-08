@@ -5,8 +5,8 @@ import "./contact.css";
 import { LanguageContext } from "../../Contexts/LanguageContext";
 import { FormContext } from "../../Contexts/FormContext";
 
-const Contact = () => {
-  const { brandName, currentLang, dialogues } = useContext(LanguageContext);
+const Contact = ({ currentLang, dialogues }) => {
+  const { brandName } = useContext(LanguageContext);
   const { handleChange, submitForm, formData } = useContext(FormContext);
 
   return (
