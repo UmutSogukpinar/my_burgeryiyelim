@@ -1,4 +1,12 @@
-#app
-{
-    width: 100%;
+#app {
+  width: 100%;
+}
+
+:root {
+  --white: #ffffff;
+  --footer-background: #333;
+  --light-gray: #cccccc;
+  --mid-gray: #888888;
+  --navbar-bg: #940c18;
+  --navbar-focus: #880b00;
 }

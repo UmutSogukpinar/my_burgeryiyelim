@@ -1,0 +1,15 @@
+#menus
+{
+    background-image: url("/images/by_bg01.png");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#menu-list-box
+{
+    width: 70%;
+    background-color: white;
+    margin: 10rem 0;
+}

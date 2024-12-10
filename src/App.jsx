@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/contact/Contact";
 import AboutUs from "./Components/info-box/aboutUs/AboutUs";
 import MeatLove from "./Components/info-box/meatLove/MeatLove";
+import Menu from "./Components/menu/Menu.jsx"
 import { useContext } from "react";
 import { LanguageContext } from "./Contexts/LanguageContext";
 
@@ -20,7 +21,7 @@ const App = () => {
         />
         <Route
           path="/menu"
-          element={<AboutUs currentLang={currentLang} dialogues={dialogues} />}
+          element={<Menu/>}
         />
         <Route
           path="/contact"

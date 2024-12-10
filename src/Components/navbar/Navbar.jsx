@@ -32,7 +32,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products">
+            <NavLink to="/menu">
               <i class="fa-solid fa-utensils"></i>
               {dialogues[currentLang].navbar.productsC}
             </NavLink>

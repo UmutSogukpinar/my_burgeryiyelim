@@ -4,15 +4,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-}
-
-:root {
-  --white: #ffffff;
-  --footer-background: #333;
-  --light-gray: #cccccc;
-  --mid-gray: #888888;
-  --navbar-bg: #940c18;
-  --navbar-focus: #880b00;
+  margin: 0;
 }
 
 *,
