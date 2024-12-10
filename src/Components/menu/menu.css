@@ -1,17 +1,99 @@
-#menus
-{
-    background-image: url("/images/by_bg01.png");
-    width: 100%;
-    display: flex;
-    justify-content: center;
+#menus {
+  background-image: url("/images/by_bg01.png");
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#menu-list-box {
+  display: flex;
+  justify-content: start;
+  flex-flow: row wrap;
+  width: 120rem;
+  background-color: var(--white);
+  margin: 10rem 0;
+  padding: 0 1rem 2rem 1rem;
+}
+
+#menu-list-box > #menu-box {
+  margin: 1.5rem .5% 0 .5%;
+  width: 24%;
+}
+
+#menu-list-box > :last-child {
+  margin-bottom: 1rem;
+}
+
+#menu-list-box > #menu-box a {
+  color: var(--white);
+}
+
+#menu-box-link .background{
+  height: 30vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+#menu-box-link .background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4));
+  z-index: 1;
 }
 
 
-#menu-list-box
-{
-    width: 70%;
-    background-color: white;
-    margin: 10rem 0;
-
+#menu-box-link .background h3 {
+  position: absolute;
+  top: 70%;
+  left: 50%;   
+  transform: translate(-50%, -20%); /* Elemanı tam ortalar */
+  z-index: 2;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  width: 90%;
 }
 
+@media (max-width: 1250px)
+{
+  #menu-list-box
+  {
+    margin-left:5rem;
+    margin-right: 5rem;
+  }
+  #menu-list-box > #menu-box {
+    margin: 1.5rem 1% 0 1%;
+    width: 48%;
+  }
+}
+
+@media (max-width: 950px)
+{
+  #menu-list-box
+  {
+    margin-left:2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 750px)
+{
+  #menu-list-box
+  {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #menu-list-box > #menu-box {
+    margin: 1.5rem 2.5% 0 2.5%;
+    width: 95%;
+  }
+}
