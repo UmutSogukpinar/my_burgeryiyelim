@@ -1,4 +1,5 @@
 import React from "react";
+import "./menu.css"
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 import menuUrl from "/images/menu-box-img/menu.jpg"
@@ -16,7 +17,7 @@ const Menu = () => {
     {id: 6, title: "süper avantajlı paket", url: menuUrl},
     {id: 7, title: "süper avantajlı paket", url: menuUrl},
   ]
-
+  
   return (
     <>
       <Navbar />
