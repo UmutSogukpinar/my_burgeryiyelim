@@ -4,12 +4,15 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import LanguageProvider from "./Contexts/LanguageContext.jsx";
 import FormProvider from "./Contexts/FormContext.jsx";
+import MenuProvider from "./Contexts/MenuContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <LanguageProvider>
       <FormProvider>
-        <App />
+        <MenuProvider>
+          <App />
+        </MenuProvider>
       </FormProvider>
     </LanguageProvider>
   </BrowserRouter>

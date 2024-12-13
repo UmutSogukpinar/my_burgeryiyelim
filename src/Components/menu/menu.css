@@ -9,10 +9,11 @@
   display: flex;
   justify-content: start;
   flex-flow: row wrap;
-  width: 120rem;
+  width: 115rem;
   background-color: var(--white);
   margin: 10rem 0;
   padding: 0 1rem 2rem 1rem;
+  border-radius: .5rem;
 }
 
 #menu-list-box > #menu-box {
@@ -29,7 +30,7 @@
 }
 
 #menu-box-link .background{
-  height: 30vh;
+  height: 40vh;
   position: relative;
   width: 100%;
   display: flex;
